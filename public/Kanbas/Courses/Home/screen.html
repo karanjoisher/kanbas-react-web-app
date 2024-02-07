@@ -171,12 +171,19 @@
       </ul>
     </div>
     <div class="flex-fill">
-      <button type="button">Collapse All</button>
-      <button type="button">View Progress</button>
-      <select>
-        <option value="publish_all">Publish All</option>
-      </select>
-      <button type="button">Module</button>
+      <div class="button-container">
+        <button class="top-buttons" type="button">Collapse All</button>
+        <button class="top-buttons" type="button">View Progress</button>
+
+        <select class="top-buttons">
+          <option value="PUBLISHALL">Publish All</option>
+        </select>
+
+        <button class="top-buttons module" type="button">
+          <i class="fa-solid fa-plus"></i>
+          Module
+        </button>
+      </div>
       <ul class="list-group wd-modules">
         <li class="list-group-item">
           <div>
@@ -363,24 +370,39 @@
     <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
       <h3>Course Status</h3>
       <!-- Implement Course Status here -->
-      <button type="button">Unpublish</button>
-      <button type="button">Published</button>
-      <ul>
-        <li><a href="">Import Existing Content</a></li>
-        <li><a href="">Import From Commons</a></li>
-        <li><a href="">Choose Home Page</a></li>
-        <li><a href="">View Course Stream</a></li>
-        <li><a href="">New Announcement</a></li>
-        <li><a href="">New Analytics</a></li>
-        <li><a href="">View Course Notifications</a></li>
+      <button class="top-buttons" type="button">
+        <i class="fa-solid fa-ban"></i>Unpublished</button>
+      <button class="top-buttons btn-published" type="button">
+        <i class="fa-solid fa-circle-check"></i>Published</button>
+      <ul class="course-status">
+        <li><button class="top-buttons">
+            <i class="fa-solid fa-file-import course-setting-icon"></i>Import Existing Content</button></li>
+        <li><button class="top-buttons">
+            <i class="fa fa-right-from-bracket course-setting-icon"></i>Import From Commons</button></li>
+        <li><button class="top-buttons">
+            <i class="fa-regular fa-circle-dot course-setting-icon"></i>Choose Home Page</button></li>
+        <li><button class="top-buttons">
+            <i class="fa-solid fa-chart-simple course-setting-icon"></i>View Course Stream</button></li>
+        <li><button class="top-buttons">
+            <i class="fa-solid fa-bullhorn course-setting-icon"></i>New Announcement</button></li>
+        <li><button class="top-buttons">
+            <i class="fa-solid fa-chart-simple course-setting-icon"></i>New Analytics</button></li>
+        <li><button class="top-buttons">
+            <i class="fa-regular fa-bell course-setting-icon"></i>View Course Notifications</button></li>
       </ul>
-      <h1>Coming Up</h1>
-      <a href="">View Calender</a>
-      <ul>
-        <li><a href="">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-        <li><a href="">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-        <li><a href="">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-      </ul>
+      <h3>To Do</h3>
+      <hr>
+      <span style="color: red;">Grade A1-ENV+HTML</span>
+      <br><br>
+      <span style="font-size: 1.5em; margin-right: 20px;">Coming Up</span>
+      <br>
+      <a href="#" style="color: red;text-decoration: none;">View Calender</a>
+      <hr>
+      <div class="upcoming-lecs">
+        <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
+        <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
+        <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
+      </div>
     </div>
   </div>
 </body>

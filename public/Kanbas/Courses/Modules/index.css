@@ -30,3 +30,33 @@
 .wd-modules > li {
   margin-bottom: 20px;
 }
+
+.button-container {
+  text-align: right; 
+}
+
+.top-buttons{
+  background-color: lightgrey;
+  border: 1px solid transparent;
+  border-color: gray;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.course-status{
+  list-style-type: none;
+}
+
+.upcoming-lecs{
+  list-style-type: none;
+}
+.upcoming-lecs > li > a{
+  color: red;
+  text-decoration: none;
+}
