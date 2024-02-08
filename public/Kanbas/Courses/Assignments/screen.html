@@ -1,189 +1,370 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-    <title>Assignments</title>
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <table width="100%">
-        <tbody>
-            <td valign="top">
-                <ul class="wd-kanbas-navigation">
-                    <li><a href="http://northeastern.edu">N</a></li>
-                    <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i> Account</a></li>
-                    <li>
-                        <a href="/Kanbas/Dashboard/screen.html">
-                            <i class="fa fa-tachometer"></i> Dashboard</a>
-                    </li>
-                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>
-                            Courses</a></li>
-                    <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                    <li><a href="#"><i class="fa fa-inbox"></i> Inbox</a></li>
-                    <li><a href="#"><i class="fa-solid fa-clock"></i> History</a></li>
-                    <li><a href="#"><i class="fa fa-video"></i> Studio</a></li>
-                    <li><a href="#"><i class="fa fa-c"></i> Commons</a></li>
-                    <li><a href="#"><i class="fa fa-question"></i> <br> Help</a></li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul class="wd-navigation">
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                    </li>
-                    <li>
-                        <a href="http://piazza.com">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li class="wd-active">
-                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li><a href="#">Discussions</a>
-                    </li>
-                    <li><a href="#">Announcements</a>
-                    </li>
-                    <li><a href="#">Pages</a>
-                    </li>
-                    <li><a href="#">Files</a>
-                    </li>
-                    <li><a href="#">Rubrics</a>
-                    </li>
-                    <li><a href="#">Outcomes</a>
-                    </li>
-                    <li><a href="#">Collaborations</a>
-                    </li>
-                    <li><a href="#">Syllabus</a>
-                    </li>
-                    <li><a href="/Kanbas/Courses/Settings/CourseDetailsTab/screen.html">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <input type="text" placeholder="Search for assignments">
-                <button>Group</button>
-                <button>Assignment</button>
-                <select>
-                    <option value="EDITASSIGNMENTDATE">Edit Assignment Dates</option>
-                </select>
-                <hr>
-                <strong>ASSIGNMENTS 40% of Total</strong>
-                <select>
-                    <option selected value="edit">Edit</option>
-                    <option value="speed_grader">Speed Grader</option>
-                    <option value="duplicate">Duplicate</option>
-                    <option value="delete">Delete</option>
-                    <option value="move_to">Move To...</option>
-                    <option value="send_to">Send To...</option>
-                    <option value="copy_to">Copy To...</option>
-                    <option value="share_commons">Share to Commons</option>
-                </select>
-                <ul>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                </ul>
-                <strong>QUIZZES 10% of Total</strong>
-                <select>
-                    <option selected value="edit">Edit</option>
-                    <option value="speed_grader">Speed Grader</option>
-                    <option value="duplicate">Duplicate</option>
-                    <option value="delete">Delete</option>
-                    <option value="move_to">Move To...</option>
-                    <option value="send_to">Send To...</option>
-                    <option value="copy_to">Copy To...</option>
-                    <option value="share_commons">Share to Commons</option>
-                </select>
-                <ul>
-                    <li><a href="#">Q1 - HTML</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Q2 - CSS</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Q3 - JS,ES6</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Q4 - NODE</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Q5 - MONGO</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                </ul>
-                <strong>EXAMS 20% of Total</strong>
-                <select>
-                    <option selected value="edit">Edit</option>
-                    <option value="speed_grader">Speed Grader</option>
-                    <option value="duplicate">Duplicate</option>
-                    <option value="delete">Delete</option>
-                    <option value="move_to">Move To...</option>
-                    <option value="send_to">Send To...</option>
-                    <option value="copy_to">Copy To...</option>
-                    <option value="share_commons">Share to Commons</option>
-                </select>
-                <ul>
-                    <li><a href="#">Midterm</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Final</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                </ul>
-                <strong>PROJECT 30% of Total</strong>
-                <select>
-                    <option selected value="edit">Edit</option>
-                    <option value="speed_grader">Speed Grader</option>
-                    <option value="duplicate">Duplicate</option>
-                    <option value="delete">Delete</option>
-                    <option value="move_to">Move To...</option>
-                    <option value="send_to">Send To...</option>
-                    <option value="copy_to">Copy To...</option>
-                    <option value="share_commons">Share to Commons</option>
-                </select>
-                <ul>
-                    <li><a href="#">Project</a><br>
-                        <a href="#">Multiple Modules</a> | Not available yet
-                    </li>
-                </ul>
-            </td>
-        </tbody>
-    </table>
+    <nav class="breadcrumb-navigation list-unstyled" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="#">CS5610.Spring24.Section1</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+        </ol>
+    </nav>
+    <!-- Implement links to Kanbas and Course Navigation  -->
+    <div class="d-block d-sm-block d-md-none">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <ul class="wd-kanbas-navigation-small wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu">N</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i> Account</a></li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox"></i> Inbox</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock"></i> History</a></li>
+                <li><a href="#"><i class="fa fa-video"></i> Studio</a></li>
+                <li><a href="#"><i class="fa fa-c"></i> Commons</a></li>
+                <li><a href="#"><i class="fa fa-question"></i> <br> Help</a></li>
+            </ul>
+        </div>
+
+        <div class="collapse" id="navbarToggleExternalContent2" data-bs-theme="dark">
+            <ul class="wd-navigation wd-navigation-small">
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                </li>
+                <li>
+                    <a href="http://piazza.com">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Quizzes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li><a href="#">Discussions</a>
+                </li>
+                <li><a href="#">Announcements</a>
+                </li>
+                <li><a href="#">Pages</a>
+                </li>
+                <li><a href="#">Files</a>
+                </li>
+                <li><a href="#">Rubrics</a>
+                </li>
+                <li><a href="#">Outcomes</a>
+                </li>
+                <li><a href="#">Collaborations</a>
+                </li>
+                <li><a href="#">Syllabus</a>
+                </li>
+                <li><a href="/Kanbas/Courses/Settings/CourseDetailsTab/screen.html">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="d-flex mt-1">
+        <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu">N</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i> Account</a></li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox"></i> Inbox</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock"></i> History</a></li>
+                <li><a href="#"><i class="fa fa-video"></i> Studio</a></li>
+                <li><a href="#"><i class="fa fa-c"></i> Commons</a></li>
+                <li><a href="#"><i class="fa fa-question"></i> <br> Help</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                </li>
+                <li>
+                    <a href="http://piazza.com">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Quizzes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li><a href="#">Discussions</a>
+                </li>
+                <li><a href="#">Announcements</a>
+                </li>
+                <li><a href="#">Pages</a>
+                </li>
+                <li><a href="#">Files</a>
+                </li>
+                <li><a href="#">Rubrics</a>
+                </li>
+                <li><a href="#">Outcomes</a>
+                </li>
+                <li><a href="#">Collaborations</a>
+                </li>
+                <li><a href="#">Syllabus</a>
+                </li>
+                <li><a href="/Kanbas/Courses/Settings/CourseDetailsTab/screen.html">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-fill">
+            <div>
+                <input class="form-control w-25 d-inline-block" type="text" placeholder="Search for assignments">
+                <span class="float-end">
+                    <button>Group</button>
+                    <button>Assignment</button>
+                    <button>Edit</button>
+                </span>
+            </div>
+            <ul class="list-group wd-modules assignment-list">
+                <li class="list-group-item">
+                    <div>
+                        <i class="fa fa-ellipsis-v"></i> Assignments
+                        <span class="float-end">
+                            <span class="assignment-weightage">40% of Total</span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-plus ms-2"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A1</h6>
+                                    <p>Week 1</p>
+                                    <p><b>Due</b> 1st Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A2</h6>
+                                    <p>Week 2</p>
+                                    <p><b>Due</b> 2nd Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A3</h6>
+                                    <p>Week 3</p>
+                                    <p><b>Due</b> 1st Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A4</h6>
+                                    <p>Week 4</p>
+                                    <p><b>Due</b> 1st Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A5</h6>
+                                    <p>Week 5</p>
+                                    <p><b>Due</b> 1st Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item assignment-item">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <i class="fa-solid fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 text-left">
+                                    <h6>A6</h6>
+                                    <p>Week 6</p>
+                                    <p><b>Due</b> 1st Feb </p>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <button type="button" class="btn"><i class="fa fa-ellipsis-v ms-2"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

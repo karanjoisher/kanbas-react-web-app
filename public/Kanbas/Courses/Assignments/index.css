@@ -1,0 +1,30 @@
+.assignment-weightage {
+    border: 1px solid black !important; 
+    border-radius: 8px !important;
+    
+    display: inline-block;
+}
+
+.assignment-item .fa-clipboard{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 25px;
+    color: green;
+}
+
+.assignment-item h6{
+    font-weight: bold;
+}
+
+.breadcrumb-item a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red ;
+}
+
+.breadcrumb-navigation li {
+    padding-top: 10px;
+}
+
+.breadcrumb-navigation {
+    border-bottom: 1px solid grey;
+}
