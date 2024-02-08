@@ -1,9 +1,10 @@
 .wd-navigation {
     background-color: white;
     list-style: none;
-    padding: 0px;
-    width: 125px;
+    padding: 0;
+    width: 150px;
     margin: 0px;
+    font-size: 15px;
     margin-left: 20px;
 }
 
@@ -29,5 +30,5 @@
 }
 
 .wd-navigation-small {
-    width: 100% !important; 
+    width: 100% !important;
 }

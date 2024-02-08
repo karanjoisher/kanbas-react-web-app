@@ -1,73 +1,76 @@
 <html>
-    <head>
-        <title>Edit</title>
-    </head>
-    <body>
-        <select>
-            <option value="speed_grader">SpeedGrader</option>
-         </select>
-        <hr>
-        <h3>Assignment Name</h3>
-        <input type="text" value="A1 - ENV + HTML">
-        <br>
-        <br>
-        
-        <textarea>This is the assignment description</textarea>
-        <br>
-        <br>
-        Points <br>
-        <input type="text" value="100">
-        <br>
-        <br>
-        Assignment Group <br>
-        <select>
-            <option value="assignment_group">ASSIGNMENTS</option>
-         </select>
-         <br>
-         <br>
-         Display Grade as <br>
-         <select>
-             <option value="percentage">Percentage</option>
-          </select>
-          <br>
-          <br>
-          Submission Type <br>
-          <select>
-              <option value="online">Online</option>
-           </select>
-           <p>
-           Online Entry Options <br>
-           <input type="checkbox" value="text" id="checkbox-text"/>
-           <label for="checkbox-text">Text Entry</label>    <br>
-           <input type="checkbox" value="url" id="checkbox-url"/>
-           <label for="checkbox-url">Website URL</label>    <br>
-           <input type="checkbox" value="recordings" id="checkbox-recordings"/>
-           <label for="checkbox-recordings">Media Recordings</label>  <br>
-           <input type="checkbox" value="annotations" id="checkbox-annotation"/>
-           <label for="checkbox-annotation">Student Annotations</label>    <br>
-           <input type="checkbox" value="file" id="checkbox-file"/>
-           <label for="checkbox-file">File Uploads</label>    <br>
-            </p>
-           Assign <br>
-           <p>
-           Assign to <br>
-           <input type="text" value="Everyone"/>
-            </p>
-           <p>
-           Due <br>
-           <input type="date" />
-           </p>
-           <p>
-           Available from <br>
-           <input type="date" />
-           </p>
-           <p>
-           Until <br>
-           <input type="date" />
-           </p>
-           <form action="/Kanbas/Courses/Assignments/screen.html">
-                <input type="button" value="Cancel" onclick="window.location.href='/Kanbas/Courses/Assignments/screen.html';">
-                <input type="submit" value="Save">
-           </form>
-    </body>
+
+<head>
+    <title>Edit</title>
+</head>
+
+<body>
+    <select>
+        <option value="speed_grader">SpeedGrader</option>
+    </select>
+    <hr>
+    <h3>Assignment Name</h3>
+    <input type="text" value="A1 - ENV + HTML">
+    <br>
+    <br>
+
+    <textarea>This is the assignment description</textarea>
+    <br>
+    <br>
+    Points <br>
+    <input type="text" value="100">
+    <br>
+    <br>
+    Assignment Group <br>
+    <select>
+        <option value="assignment_group">ASSIGNMENTS</option>
+    </select>
+    <br>
+    <br>
+    Display Grade as <br>
+    <select>
+        <option value="percentage">Percentage</option>
+    </select>
+    <br>
+    <br>
+    Submission Type <br>
+    <select>
+        <option value="online">Online</option>
+    </select>
+    <p>
+        Online Entry Options <br>
+        <input type="checkbox" value="text" id="checkbox-text" />
+        <label for="checkbox-text">Text Entry</label> <br>
+        <input type="checkbox" value="url" id="checkbox-url" />
+        <label for="checkbox-url">Website URL</label> <br>
+        <input type="checkbox" value="recordings" id="checkbox-recordings" />
+        <label for="checkbox-recordings">Media Recordings</label> <br>
+        <input type="checkbox" value="annotations" id="checkbox-annotation" />
+        <label for="checkbox-annotation">Student Annotations</label> <br>
+        <input type="checkbox" value="file" id="checkbox-file" />
+        <label for="checkbox-file">File Uploads</label> <br>
+    </p>
+    Assign <br>
+    <p>
+        Assign to <br>
+        <input type="text" value="Everyone" />
+    </p>
+    <p>
+        Due <br>
+        <input type="date" />
+    </p>
+    <p>
+        Available from <br>
+        <input type="date" />
+    </p>
+    <p>
+        Until <br>
+        <input type="date" />
+    </p>
+    <form action="/Kanbas/Courses/Assignments/screen.html">
+        <input type="button" value="Cancel" onclick="window.location.href='/Kanbas/Courses/Assignments/screen.html';">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
 </html>

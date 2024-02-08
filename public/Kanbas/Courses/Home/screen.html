@@ -122,7 +122,7 @@
       </ul>
     </div>
     <div class="d-none d-md-block">
-      <ul class="wd-navigation">
+      <ul class="wd-navigation pr-5">
         <li class="wd-active">
           <a href="/Kanbas/Courses/Home/screen.html">Home</a>
         </li>
@@ -171,6 +171,7 @@
       </ul>
     </div>
     <div class="flex-fill">
+
       <div class="button-container">
         <button class="top-buttons" type="button">Collapse All</button>
         <button class="top-buttons" type="button">View Progress</button>
@@ -179,7 +180,7 @@
           <option value="PUBLISHALL">Publish All</option>
         </select>
 
-        <button class="top-buttons module" type="button">
+        <button style="background-color: red; color:white" class="top-buttons module" type="button">
           <i class="fa-solid fa-plus"></i>
           Module
         </button>
@@ -366,15 +367,16 @@
           </ul>
         </li>
       </ul>
+
     </div>
-    <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
+    <div class="course-status flex-grow-0 me-2 d-none d-lg-block m-10">
       <h3>Course Status</h3>
       <!-- Implement Course Status here -->
       <button class="top-buttons" type="button">
         <i class="fa-solid fa-ban"></i>Unpublished</button>
       <button class="top-buttons btn-published" type="button">
         <i class="fa-solid fa-circle-check"></i>Published</button>
-      <ul class="course-status">
+      <ul class="p-0 list-unstyled button-list">
         <li><button class="top-buttons">
             <i class="fa-solid fa-file-import course-setting-icon"></i>Import Existing Content</button></li>
         <li><button class="top-buttons">

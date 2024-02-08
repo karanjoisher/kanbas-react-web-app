@@ -6,36 +6,34 @@
   padding: 0px;
 }
 
-.wd-modules {
-  margin: 5px;
-}
 
-.wd-modules > li {
+
+.wd-modules>li {
   background-color: lightgray;
   border: 1px solid gray !important;
   border-left: none !important;
 }
 
-.wd-modules > li > div {
+.wd-modules>li>div {
   padding: 6px;
   border-left: 1px solid gray !important;
 }
 
-.wd-modules > li > ul > li {
+.wd-modules>li>ul>li {
   padding: 5px;
   border-top: 1px solid gray !important;
   border-left: 2px solid green;
 }
 
-.wd-modules > li {
+.wd-modules>li {
   margin-bottom: 20px;
 }
 
 .button-container {
-  text-align: right; 
+  text-align: right;
 }
 
-.top-buttons{
+.top-buttons {
   background-color: lightgrey;
   border: 1px solid transparent;
   border-color: gray;
@@ -45,18 +43,31 @@
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
   cursor: pointer;
 }
 
-.course-status{
+.button-container>.top-buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.course-status {
+
+  list-style-type: none;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+.course-status .top-buttons {
+  margin-bottom: 10px !important;
+}
+
+.upcoming-lecs {
   list-style-type: none;
 }
 
-.upcoming-lecs{
-  list-style-type: none;
-}
-.upcoming-lecs > li > a{
+.upcoming-lecs>li>a {
   color: red;
   text-decoration: none;
 }

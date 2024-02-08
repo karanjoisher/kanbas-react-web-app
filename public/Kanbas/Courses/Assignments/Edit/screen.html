@@ -18,7 +18,8 @@
     <nav class="breadcrumb-navigation list-unstyled" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="text-decoration-none" href="#">CS5610.Spring24.Section1</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a class="text-decoration-none" href="#">Assignments</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a class="text-decoration-none" href="#">Assignments</a>
+            </li>
             <li class="breadcrumb-item active" aria-current="page">A1</li>
         </ol>
     </nav>
@@ -179,108 +180,109 @@
             </ul>
         </div>
         <div class="flex-fill">
-            <h3>A1</h3>
-            <hr>
-            <div class="mb-3">
-                <input type="text" class="form-control" value="A1">
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control" rows="4">Assignment description</textarea>
-            </div>
+            <div class="edit-screen">
+                <h4>A1</h4>
+                <hr>
+                <div class="mb-3">
+                    <input type="text" class="form-control" value="A1">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4">Assignment description</textarea>
+                </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="points" class="form-label">Points</label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" id="points" value="100">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="assignment-grp" class="form-label">Assignment Group</label>
-                    </div>
-                    <div class="col-sm-4">
-                        <select class="form-select" aria-label="ASSIGNMENTS" id="assignment-grp">
-                            <option selected>ASSIGNMENTS</option>
-                        </select>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="grade" class="form-label">Display Grade as</label>
-                    </div>
-                    <div class="col-sm-4">
-                        <select class="form-select" aria-label="Percentage" id="grade">
-                            <option selected>Percentage</option>
-                        </select>
-                        <br>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="do-not-count">
-                            <label class="form-check-label" for="do-not-count">
-                                Do not count this assignment towards the final grade
-                            </label>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="points" class="form-label">Points</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="points" value="100">
                         </div>
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label class="form-label">Assign</label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label for="exampleFormControlInput4" class="form-label">
-                            <h5>Assign</h5>
-                        </label>
-                        <select class="form-select" aria-label="Disabled select example" disabled>
-                            <option selected>Everyone</option>
-                        </select>
-                        <br>
-                        <label for="exampleFormControlInput5" class="form-label">
-                            <h5>Due</h5>
-                        </label>
-                        <input type="date" class="form-control" id="exampleFormControlInput5">
-                        <br>
-                        <label for="exampleFormControlInput6" class="form-label">
-                            <h5>Available from</h5>
-                        </label>
-                        <input type="date" class="form-control" id="exampleFormControlInput6">
-                        <br>
-                        <label for="exampleFormControlInput7" class="form-label">
-                            <h5>Until</h5>
-                        </label>
-                        <input type="date" class="form-control" id="exampleFormControlInput7">
-                        <br>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="notify-users">
-                            <label class="form-check-label" for="notify-users">
-                                Notify users that this content has changed
-                            </label>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="assignment-grp" class="form-label">Assignment Group</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-select" aria-label="ASSIGNMENTS" id="assignment-grp">
+                                <option selected>ASSIGNMENTS</option>
+                            </select>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-10">
-
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="grade" class="form-label">Display Grade as</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-select" aria-label="Percentage" id="grade">
+                                <option selected>Percentage</option>
+                            </select>
+                            <br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="do-not-count">
+                                <label class="form-check-label" for="do-not-count">
+                                    Do not count this assignment towards the final grade
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-2">
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button class="btn btn-primary"
-                                id="cancel">Cancel</button></a>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button class="btn btn-primary"
-                                id="submit">Save</button></a>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="form-label">Assign</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="exampleFormControlInput4" class="form-label">
+                                <h5>Assign</h5>
+                            </label>
+                            <select class="form-select" aria-label="Disabled select example" disabled>
+                                <option selected>Everyone</option>
+                            </select>
+                            <br>
+                            <label for="duedate" class="form-label">
+                                <h5>Due</h5>
+                            </label>
+                            <input type="date" class="form-control" id="duedate">
+                            <br>
+                            <label for="availableFrom" class="form-label">
+                                <h5>Available from</h5>
+                            </label>
+                            <input type="date" class="form-control" id="availableFrom">
+                            <br>
+                            <label for="untilDate" class="form-label">
+                                <h5>Until</h5>
+                            </label>
+                            <input type="date" class="form-control" id="untilDate">
+                            <br>
+                        </div>
                     </div>
-                </div>
+                    <br>
 
+                    <div class="row align-items-center">
+                        <div class="col-10 align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="notify-users">
+                                <label class="form-check-label" for="notify-users">
+                                    Notify users that this content has changed
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center">
+                            <a href="/Kanbas/Courses/Assignments/screen.html"><button
+                                    style="background-color: red; color: white;" class="btn"
+                                    id="cancel">Cancel</button></a>
+                            <a href="/Kanbas/Courses/Assignments/screen.html"><button
+                                    style="background-color: red; color: white;" class="btn"
+                                    id="submit">Save</button></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
