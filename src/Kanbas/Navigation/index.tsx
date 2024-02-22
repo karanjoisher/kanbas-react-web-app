@@ -4,15 +4,15 @@ import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaInbox, Fa
 function KanbasNavigation() {
     const links = [
         { label: "N", icon: null },
-        { label: "Account", icon: <FaRegUserCircle className="fs-2 fa-user" /> },
-        { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" /> },
-        { label: "Courses", icon: <FaBook className="fs-2" /> },
-        { label: "Calendar", icon: <FaRegCalendarAlt className="fs-2" /> },
-        { label: "Inbox", icon: <FaInbox className="fs-2" /> },
-        { label: "History", icon: <FaClock className="fs-2" /> },
-        { label: "Studio", icon: <FaTv className="fs-2" /> },
-        { label: "Commons", icon: <FaArrowCircleRight className="fs-2" /> },
-        { label: "Help", icon: <FaInfoCircle className="fs-2" /> },
+        { label: "Account", icon: <FaRegUserCircle className="fs-2 fa-user text-danger" /> },
+        { label: "Dashboard", icon: <FaTachometerAlt className="fs-2 text-danger" /> },
+        { label: "Courses", icon: <FaBook className="fs-2 text-danger" /> },
+        { label: "Calendar", icon: <FaRegCalendarAlt className="fs-2 text-danger" /> },
+        { label: "Inbox", icon: <FaInbox className="fs-2 text-danger" /> },
+        { label: "History", icon: <FaClock className="fs-2 text-danger" /> },
+        { label: "Studio", icon: <FaTv className="fs-2 text-danger" /> },
+        { label: "Commons", icon: <FaArrowCircleRight className="fs-2 text-danger" /> },
+        { label: "Help", icon: <FaInfoCircle className="fs-2 text-danger" /> },
     ];
     const { pathname } = useLocation();
     return (
