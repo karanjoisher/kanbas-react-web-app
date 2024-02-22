@@ -5,6 +5,7 @@ import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 
 function Courses() {
     const { courseId } = useParams();
@@ -24,7 +25,7 @@ function Courses() {
                         <Route path="Piazza" element={<h1>Piazza</h1>} />
                         <Route path="Zoom Meetings" element={<h1>Zoom Meetings</h1>} />
                         <Route path="Assignments" element={<Assignments/>} />
-                        <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
+                        <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
                         <Route path="Quizzes" element={<h1>Quizzes</h1>} />
                         <Route path="Grades" element={<h1>Grades</h1>} />
                         <Route path="People" element={<h1>People</h1>} />
