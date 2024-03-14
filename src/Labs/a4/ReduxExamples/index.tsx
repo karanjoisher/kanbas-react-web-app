@@ -2,6 +2,7 @@ import React from "react";
 import HelloRedux from "./HelloRedux";
 import CounterRedux from "./CounterRedux";
 import AddRedux from "./AddRedux";
+import TodoList from "./todos/TodoList";
 const ReduxExamples = () => {
   return(
     <div>
@@ -9,6 +10,7 @@ const ReduxExamples = () => {
       <HelloRedux />
       <CounterRedux />
       <AddRedux />
+      <TodoList />
     </div>
   );
 };
