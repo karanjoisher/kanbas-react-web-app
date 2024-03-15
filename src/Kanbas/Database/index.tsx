@@ -4,4 +4,13 @@ import assignments from "./assignments.json";
 import enrollments from "./enrollments.json";
 import users from "./users.json";
 import grades from "./grades.json";
-export { courses, modules, assignments, users, enrollments, grades };
+
+let db = {
+    courses: courses,
+    modules: modules,
+    assignments: assignments,
+    users: users,
+    enrollments: enrollments,
+    grades: grades
+}
+export { courses, modules, assignments, users, enrollments, grades, db };
