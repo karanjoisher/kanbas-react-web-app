@@ -19,6 +19,12 @@ function ModuleList() {
         const newModuleList = [newModule, ...moduleList];
         setModuleList(newModuleList);
     };
+    const deleteModule = (moduleId: string) => {
+        const newModuleList = moduleList.filter(
+            (module) => module._id !== moduleId);
+        setModuleList(newModuleList);
+    };
+
 
 
     //const modulesList = moduleList.filter((module) => module.course === courseId);
@@ -42,6 +48,7 @@ function ModuleList() {
             <button className="mb-2 btn btn-primary" onClick={() => { addModule(module) }} >
                 Add New Module
             </button>
+
             <hr />
             <div className="button-container">
                 <button className="top-buttons" type="button">Collapse All</button>
@@ -74,9 +81,14 @@ function ModuleList() {
                                 <FaEllipsisV className="me-2" />
                                 {module.name}
                                 <span className="float-end">
+                                    <button className="rounded btn btn-danger p-1 mx-2 mb-1"
+                                        onClick={() => deleteModule(module._id)}>
+                                        Delete
+                                    </button>
                                     <FaCheckCircle className="text-success" />
                                     <FaPlusCircle className="ms-2" />
                                     <FaEllipsisV className="ms-2" />
+
                                 </span>
                             </div>
                             {/* {selectedModule._id === module._id && (
