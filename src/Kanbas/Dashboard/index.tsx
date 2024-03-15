@@ -12,7 +12,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
       <h1>Dashboard</h1>              <hr />
 
       <h2>Published Courses (12)</h2> <hr />
-      <h6>New Course Form</h6>
+      <h6>Add/Edit Course Form</h6>
       <input value={course.name} className="w-25 mb-2 form-control" onChange={(e) => setCourse({ ...course, name: e.target.value })} />
       <input value={course.number} className="w-25 mb-2 form-control" onChange={(e) => setCourse({ ...course, number: e.target.value })} />
       <input value={course.startDate} className="w-25 mb-2 form-control" type="date" onChange={(e) => setCourse({ ...course, startDate: e.target.value })} />
