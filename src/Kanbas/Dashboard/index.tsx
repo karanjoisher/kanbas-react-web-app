@@ -21,6 +21,19 @@ function Dashboard() {
     setCourses(courses.filter((course) => course._id !== courseId));
   };
 
+  const updateCourse = () => {
+    setCourses(
+      courses.map((c) => {
+        if (c._id === course._id) {
+          return course;
+        } else {
+          return c;
+        }
+      })
+    );
+  };
+
+
 
 
   return (
@@ -37,6 +50,10 @@ function Dashboard() {
       <button className="btn btn-primary" onClick={addNewCourse} >
         Add New Course
       </button>
+      <button className="mx-2 btn btn-primary" onClick={updateCourse} >
+        Update Course
+      </button>
+
       <hr />
       <div className="row">
         <div className="row row-cols-1 row-cols-md-5 g-4">
@@ -55,17 +72,26 @@ function Dashboard() {
                   <p className="card-text">{course.name}</p>
 
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-4">
                       <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
                         Go </Link>
                     </div>
-                    <div className="col-6">
+                    <div className="col-4">
                       <button className="btn btn-primary" onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
                       }}>
                         Delete
                       </button>
+                    </div>
+                    <div className="col-4">
+                      <button className="btn btn-primary" onClick={(event) => {
+                        event.preventDefault();
+                        setCourse(course);
+                      }}>
+                        Edit
+                      </button>
+
                     </div>
                   </div>
                 </div>
