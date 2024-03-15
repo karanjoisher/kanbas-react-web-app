@@ -7,6 +7,7 @@ function ModuleList() {
     const { courseId } = useParams();
     const [moduleList, setModuleList] = useState<any[]>(modules);
     const [module, setModule] = useState({
+        _id: undefined,
         name: "New Module",
         description: "New Description",
         course: courseId,
@@ -24,6 +25,17 @@ function ModuleList() {
             (module) => module._id !== moduleId);
         setModuleList(newModuleList);
     };
+    const updateModule = () => {
+        const newModuleList = moduleList.map((m) => {
+            if (m._id === module._id) {
+                return module;
+            } else {
+                return m;
+            }
+        });
+        setModuleList(newModuleList);
+    };
+
 
 
 
@@ -48,7 +60,9 @@ function ModuleList() {
             <button className="mb-2 btn btn-primary" onClick={() => { addModule(module) }} >
                 Add New Module
             </button>
-
+            <button className="mb-2 btn btn-primary" onClick={updateModule}>
+                Update
+            </button>
             <hr />
             <div className="button-container">
                 <button className="top-buttons" type="button">Collapse All</button>
@@ -81,9 +95,13 @@ function ModuleList() {
                                 <FaEllipsisV className="me-2" />
                                 {module.name}
                                 <span className="float-end">
-                                    <button className="rounded btn btn-danger p-1 mx-2 mb-1"
+                                    <button className="rounded btn btn-danger p-1 mb-1"
                                         onClick={() => deleteModule(module._id)}>
                                         Delete
+                                    </button>
+                                    <button className="rounded btn btn-primary p-1 mx-2 mb-1"
+                                        onClick={(event) => { setModule(module); }}>
+                                        Edit
                                     </button>
                                     <FaCheckCircle className="text-success" />
                                     <FaPlusCircle className="ms-2" />
